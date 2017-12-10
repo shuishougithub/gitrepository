@@ -1,0 +1,12 @@
+com\bjpowernode\esupermarket\manager\domain\OrderDetail.class
+com\bjpowernode\esupermarket\manager\domain\Product.class
+com\bjpowernode\esupermarket\manager\domain\ShoppingCart.class
+com\bjpowernode\esupermarket\manager\web\controller\ProductController.class
+com\bjpowernode\esupermarket\manager\domain\PaginationVO.class
+com\bjpowernode\esupermarket\manager\domain\ProductCondition.class
+com\bjpowernode\esupermarket\manager\service\impl\ProductServiceImpl.class
+com\bjpowernode\esupermarket\manager\service\ProductService.class
+com\bjpowernode\esupermarket\manager\domain\Customer.class
+com\bjpowernode\esupermarket\manager\domain\Order.class
+com\bjpowernode\esupermarket\manager\dao\ProductDao.class
+com\bjpowernode\esupermarket\manager\domain\receiveAddress.class

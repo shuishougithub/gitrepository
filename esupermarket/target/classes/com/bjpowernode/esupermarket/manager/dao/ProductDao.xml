@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.esupermarket.manager.dao.ProductDao">
+   <insert id="save">
+     insert into tbl_product (productNo,title,price,sellPoint,status,
+     image1,image2,image3,image4,image5,introduce
+     ) values(#{productNo},#{title},#{price},#{sellPoint},#{status},
+     #{image1},#{image2},#{image3},#{image4},#{image5},#{introduce})
+   </insert>
+   
+   <select id="getProductById" resultType="Product">
+      select id,productNo,title,price,sellPoint,status,
+      image1,image2,image3,image4,image5,introduce
+      from tbl_product 
+      where id = #{productId}
+   </select>
+    
+    <update id="update">
+      update tbl_product set productNo=#{productNo},title=#{title},price=#{price},sellPoint=#{sellPoint},status=#{status},
+     image1=#{image1},image2=#{image2},image3=#{image3},image4=#{image4},image5=#{image5},introduce=#{introduce}
+     where id =#{id}
+    </update>
+    
+    <delete id="deleteByIds">
+       delete from tbl_product 
+       <where> 
+          id in
+           <foreach collection="array" open="(" item="id" separator="," close=")">
+              #{id}
+           </foreach>
+       </where>
+    </delete>
+    
+      <select id="getTotal" resultType="long">
+         select count(*) from tbl_product 
+          <where>
+              <if test="productNo!=null and productNo !=''">
+                  and productNo like '%' #{productNo} '%'
+              </if>
+              <if test="title !=null and title!=''">
+                 and title like '%' #{title} '%'
+              </if>
+               <if test="price > 0">
+                   and price = #{price}
+               </if>
+               <if test="sellPoint !=null and sellPoint !=''">
+                  and sellPoint like #{sellPoint}
+               </if>
+               <if test="status !=null and status !=''">
+                 and status = #{status}
+               </if>
+          </where>
+      </select>
+      
+      <select id="getProductsByPage"  resultType="Product">
+         select id,productNo,title,price,status,sellPoint
+          from tbl_product
+            <where>
+              <if test="productNo!=null and productNo !=''">
+                  and productNo like '%' #{productNo} '%'
+              </if>
+              <if test="title !=null and title!=''">
+                 and title like '%' #{title} '%'
+              </if>
+               <if test="price > 0">
+                   and price = #{price}
+               </if>
+               <if test="sellPoint !=null and sellPoint !=''">
+                  and sellPoint like #{sellPoint}
+               </if>
+               <if test="status !=null and status !=''">
+                 and status = #{status}
+               </if>
+          </where>
+          limit #{skipNo},#{pageSize}
+      </select>
+      
+      <select id="getProductsByStatus" resultType="Product">
+       select id,productNo,title,price,status,sellPoint,image1
+          from tbl_product
+          where status =#{status}
+      </select>
+</mapper>

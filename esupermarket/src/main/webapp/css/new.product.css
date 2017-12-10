@@ -1,0 +1,1727 @@
+﻿body {
+	background: #fff;
+}
+/*页面主体*/
+.section {
+    width: 1200px;
+    margin: 10px auto;
+}
+/*面包屑*/
+.section-bread {
+	position: relative;
+	z-index: 2;
+}
+.section-bread > li{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 20px;
+    color: #523669;
+}
+.section-bread a {
+    display: inline-block;
+    vertical-align: middle;
+    color: #666;
+}
+.section-bread li > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.section-bread i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+.b-company {
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+}
+.b-company > i{
+    background: url("../images/sprit_biyao.png") no-repeat 0 -400px;
+}
+.b-contact span {
+	display: inline-block;
+    vertical-align: middle;
+}
+/*商家详情*/
+.bread-company {
+    position: absolute;
+    top: 34px;
+    left: -120px;
+    z-index: 3;
+	display: none;
+    width: 236px;
+    padding: 0 17px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 9px #ccc;
+    background: #fff;
+    cursor: default;
+}
+.bread-company > div {
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #ccc;
+    color: #666;
+}
+.bread-company .company-head {
+    position: relative;
+}
+.company-icon {
+    position: relative;
+    top: -10px;
+    left: 0;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+}
+.company-icon img {
+	display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+.company-name {
+    display: inline-block;
+    width: 120px;
+    margin-left: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    color: #666;
+}
+.company-head > b {
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    background: url("../images/sprit_biyao.png")  no-repeat -300px -579px;
+}
+.company-head > i {
+    position: absolute;
+    top: -7px;
+    right: 85px;
+    z-index: 4;
+    display: inline-block;
+    width: 15px;
+    height: 9px;
+    background: url("../images/dzicon.png") no-repeat -32px -170px;
+}
+
+.company-head .company-contact {
+    width: 85px;
+    height: 22px;
+    padding-left: 6px;
+    margin-bottom: 5px;
+    line-height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.company-contact b {
+	display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    background: url(../images/commonsprite.png) no-repeat 0 2px;
+}
+
+.company-contact span {
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.bread-company .company-score {
+    padding: 11px 0;
+}
+
+.company-score {
+    padding: 11px 17px;
+}
+
+.company-score ul {
+	overflow: hidden;
+}
+
+.company-score li {
+	float: left;
+	height: 36px;
+	text-align: center;
+	line-height: 18px;
+}
+
+.company-score .score-first {
+	border-right: 1px solid #ccc;
+}
+
+.company-score p {
+	width: 116px;
+	text-align: center;
+	color: #503767;
+}
+
+.company-score span {
+	color: #666;
+}
+
+.bread-company .company-intro {
+    padding-top: 5px;
+    color: #666;
+    border-bottom: 0;
+}
+.b-phone i {
+    background: url("../images/sprit_biyao.png") no-repeat -23px -400px;
+}
+.b-contact div {
+    display: inline-block;
+    width: 85px;
+    height: 22px;
+    padding-left: 6px;
+    line-height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.b-contact i {
+    vertical-align: middle;
+    background: url(../images/commonsprite.png) no-repeat 0 2px;
+}
+/*编辑器部分*/
+.section-editor {
+    margin-top: 30px;
+    position: relative;
+}
+
+.section-editor:after {
+	content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.editor-main {
+    float: left;
+}
+
+.editor-main .editor-picture {
+	overflow: hidden;
+}
+
+.editor-picture p {
+	position: relative;
+    float: left;
+    width: 580px;
+    height: 580px;
+    margin-right: 14px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.editor-picture p img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.editor-picture ul {
+    float: left;
+}
+
+.editor-picture li {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 18px;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    text-align: center;
+}
+
+.editor-picture li img {
+	max-width: 100%;
+    max-height: 100%;
+}
+
+.editor-picture .main-active {
+    border: 1px solid #b768a5;
+}
+
+.editor-main .editor-model {
+    position: relative;
+    display: none;
+    width: 696px;
+    height: 520px;
+    padding-bottom: 60px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.editor-model img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.editor-model span,
+.editor-picture p span {
+	position: absolute;
+	bottom: 13px;
+	left: 14px;
+	display: block;
+	height: 40px;
+	width: 120px;
+	border-radius: 3px;
+	line-height: 40px;
+	color: #523669;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	background: #fff;
+	cursor: pointer;
+	box-shadow: 0 1px 4px 2px #d8d8d8;
+}
+
+.editor-model i {
+	position: absolute;
+	bottom: 13px;
+	left: 300px;
+	display: block;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background: #fff url(../images/product-reset.png) center center no-repeat;
+	cursor: pointer;
+	box-shadow: 0 1px 4px 2px #d8d8d8;
+}
+
+.editor-model i.editor-return {
+	left: 360px;
+	background: #fff url(../images/product-turn.png) center center no-repeat;
+}
+
+.editor-model span.editor-3d {
+	right: 14px;
+	left: inherit;
+}
+
+/*ar实景体验浮层*/
+.ar-dialog {
+	
+}
+
+.ar-dialog span {
+	display: block;
+	width: 200px;
+	height: 200px;
+	margin: 20px auto; 
+	background: url(../images/an_ewm.png) no-repeat;
+	background-size: 100% 100%;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static4.biyao.com/pc/www/img/an_ewm.png?v=biyao_5410c7b',sizingMethod='scale');
+}
+
+.ar-dialog p {
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+}
+
+/*右侧面板部分*/
+.editor-panel {
+    float: right;
+    width: 465px;
+}
+
+/*右侧面板顶部*/
+.panel-top {
+    border-bottom: 1px solid #ccc;
+}
+
+.panel-top h1 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 14px;
+}
+
+.panel-top p {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 14px;
+}
+
+/*右侧面板中间部分*/
+.panel-main {
+    color: #666;
+}
+
+.panel-main > li {
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.panel-main > li > div {
+    float: right;
+    width: 400px;
+}
+
+.panel-main > li > span {
+    float: left;
+    width: 65px;
+    font-size: 14px;
+}
+
+/*价格周期区域*/
+.panel-press > span {
+    height: 35px;
+    line-height: 42px;
+}
+
+.panel-press > div {
+    height: 35px;
+}
+
+.panel-press > div > span {
+    display: inline-block;
+    height: 35px;
+    font-size: 14px;
+}
+
+.panel-maney {
+    color: #f85453;
+}
+
+.panel-maney i {
+    display: inline-block;
+    height: 35px;
+    vertical-align: -3px;
+    font-size: 28px;
+}
+
+.panel-duration {
+    display: inline-block;
+    height: 35px;
+    margin-left: 40px;
+    line-height: 35px;
+    vertical-align: 1px;
+}
+
+/*签字区域*/
+.panel-design > span {
+    height: 35px;
+    line-height: 35px;
+}
+
+.panel-design > div {
+    width: 378px!important;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+/*签字收缩样式*/
+.design-sleep input {
+	height: 33px;
+    width: 358px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.design-sleep i {
+	display: inline-block;
+    width: 13px;
+    height: 6px;
+    vertical-align: middle;
+    background: url(../images/sprit_biyao.png) -305px -142px no-repeat;
+}
+
+/*签字展开样式*/
+.design-active {
+	display: none;
+}
+
+.design-active .design-title{
+    position: relative;
+    height: 33px;
+    line-height: 35px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.design-title span {
+    position: absolute;
+    top: -2px;
+    right: -16px;
+    width: 35px;
+    height: 33px;
+    display: inline-block;   
+    cursor: pointer;
+}
+
+/*普通低模签字下拉*/
+.design-down {
+    border-top: 1px solid #ccc;
+}
+
+.design-down img {
+    width: 110px;
+    height: 110px;
+    margin: 10px 0;
+}
+
+.design-down div {
+    display: inline-block;
+    width: 240px;
+    margin: 10px 0 0 15px;
+    vertical-align: top;
+}
+
+.design-down .design-content {
+	margin-bottom: 10px;
+}
+
+.design-down p,.design-down span {
+    font-size: 14px;
+}
+
+.design-down p span {
+    display: inline-block;
+    margin: 0 12px 0 8px;
+    color: #b767a5;
+}
+
+.design-down div>span {
+    display:inline-block;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.design-down input{
+	float: left;
+    height: 33px;
+    width: 146px;
+    border: 1px solid #ccc;
+    border-right: 0;
+    vertical-align: middle;
+    padding-left:5px;
+}
+
+.design-down p i {
+    display: inline-block;
+    height: 35px;
+    width: 88px;
+    text-align: center;
+    line-height: 35px;
+    background: #b76aa5;
+    color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/*眼镜低模签字下拉*/
+.design-glass {
+	border-top: 1px solid #ccc;
+}
+
+/*tab标签*/
+.design-glassTab {
+	height: 72px;
+	border-bottom: 2px solid #dedce1;
+}
+
+.design-glassTab li {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.design-glassTab dl {
+	width: 80px;
+	margin: 5px 0;
+	overflow: hidden;
+}
+
+.design-glassTab .glassTab-hqb dl {
+	border-right: 1px solid #dedede;
+}
+
+.design-glassTab dt {
+	height: 30px;
+	width: 30px;
+	margin: 5px auto;
+	background: url(../images/designtab-bg-normal.png) center no-repeat;
+}
+
+.design-glassTab li.glassTab-active dt {
+	background: url(../images/designtab-bg-active.png) center no-repeat;
+}
+
+.design-glassTab i {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background: url(../images/designtab-hqb.png) center no-repeat;
+}
+
+.design-glassTab .glassTab-leg i {
+	background: url(../images/designtab-leg.png) center no-repeat;
+}
+
+.design-glassTab li.glassTab-active dd {
+	color: #ca90bd;
+}
+
+.design-glassTab dd {
+	margin: 5px 0;
+	line-height: 17px;
+	text-align: center;
+}
+
+.design-glassTab span {
+	position: absolute;
+	bottom: -2px;
+	display: block;
+	height: 2px;
+	width: 80px;
+	background-color: transparent;
+}
+
+.design-glassTab li.glassTab-active span {
+	background: #ca90bd;
+}
+
+/*签名主体*/
+.design-glassMain {
+	
+}
+
+.design-glassMain li {
+	display: none;
+}
+
+.design-glassMain li.glassMain-active {
+	display: block;
+}
+
+.design-glassMain li > span {
+	display: block;
+    margin: 5px 0 10px;
+    line-height: 36px;
+    color: #666;
+}
+
+.design-glassMain li > span i {
+	font-size: 14px;
+	font-weight: bold;
+	color: #f85453;
+}
+
+.design-glassMain li > span b {
+	float: left;
+    width: 22px;
+    height: 22px;
+    margin: 9px 10px 0 0;
+    background: url(../images/hqb_bg.png) no-repeat;
+}
+
+li.glassMain-leg > span b {
+	background: url("../images/jtkz.png") no-repeat;
+}
+
+.design-glassMain li > span span {
+	margin-right: 10px;
+}
+
+.design-glassMain li > p {
+	margin-top: 10px;
+	color: #666;
+}
+
+.design-glassMain div {
+	margin: 10px 0;
+}
+
+.design-glassMain div img {
+	width: 150px;
+	height: 180px;
+}
+
+.design-glassMain div p {
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.design-glassMain div span {
+	display: block;
+	font-size: 14px;
+	color: #666;
+}
+
+.design-glassMain div input {
+	width: 120px;
+	height: 30px;
+	padding: 0 5px;
+	margin: 10px 0;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+	color: #666;
+}
+
+.design-glassMain div i {
+	display: block;
+	width: 130px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    background: #B86AA6;
+    cursor: pointer;
+}
+
+/*规格尺寸区域*/
+.panel-main .panel-specs {
+	margin-top: 15px;
+	overflow: visible;
+}
+
+.specs-dimension > span {
+	float: left;
+    width: 65px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+.specs-dimension .specs-img {
+	height: 52px;
+	line-height: 52px;
+}
+
+.specs-dimension img{
+    width: 50px;
+    height: 50px;
+}
+
+.specs-dimension > div {
+	float: right;
+    width: 400px;
+}
+
+.specs-dimension ul {
+	width: 406px;
+}
+
+.specs-dimension li {
+    position: relative;
+    display: inline-block;
+    margin: 0 6px 15px 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.specs-dimension li em {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+	width: 21px;
+	height: 21px;
+	background: url("../images/sprit_biyao.png") -147px -36px no-repeat;
+}
+
+.specs-dimension li i {
+	position: absolute;
+    top: 48px;
+    left: 15px;
+    z-index: 3;
+    display: none;
+    width: 24px;
+    height: 10px;
+    background: url(../images/triangle.png) no-repeat;
+    background-size: 100% 100%;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static4.biyao.com/pc/common/img/master/triangle.png?v=biyao_95cca68',sizingMethod='scale');
+}
+
+.specs-dimension li div {
+	position: absolute;
+    top: 58px;
+    left: -30px;
+    z-index: 2;
+    display: none;
+    width: 300px;
+    padding: 15px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 1px 4px 2px #d8d8d8;
+    cursor: default;
+}
+
+.specs-dimension li .material-sale {
+	left: -5px;
+    width: 60px;
+    padding: 0;
+    text-align: center;
+    line-height: 30px;
+    color: #333;
+}
+
+.specs-dimension li div img {
+	float: left;
+	margin-right: 10px;
+	width: 90px;
+	height: 90px;
+}
+
+.specs-dimension li div b {
+	font-weight: normal;
+    color: #523669;
+}
+
+.specs-dimension li div p {
+	width: 145px;
+    margin: 3px 0 0 100px;
+    line-height: 20px;
+    color: #333;
+}
+
+/* 无模型选中样式 */
+.specs-dimension .noModel-specs-active {
+    border: 1px solid #b768a5;
+}
+
+.specs-dimension .noModel-specs-active em {  
+  	display: block;
+}
+
+/* 无模型无库存样式 */
+.specs-dimension .noModel-specs-gray {
+    display:none;
+}
+
+/* 低模选中样式 */
+.specs-dimension .lowModel-specs-active {
+    border: 1px solid #b768a5;
+}
+
+.specs-dimension .lowModel-specs-active em {  
+  	display: block;
+}
+
+/* 低模无库存样式 */
+.specs-dimension .lowModel-specs-gray {
+    border: 1px dashed #ccc;
+}
+
+/* 低模选中无库存样式 */
+.specs-dimension .lowModel-specs-selectGray {
+    border: 1px dashed #b768a5;
+}
+
+.specs-dimension .lowModel-specs-selectGray em {  
+  	display: block;
+}
+
+.specs-detail {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 23px;
+    font-size: 14px;
+}
+
+/*尺码对照表*/
+.panel-main .panel-sizeImg {
+	margin: 0 0 15px;
+	cursor: pointer;
+}
+
+.panel-sizeImg img {
+	display: none;
+}
+
+.sizeImg-dialog img {
+	width: 560px;
+}
+
+/*数量选择区域*/
+.panel-main .panel-count {
+	margin: 0 0 15px;
+}
+
+.panel-count > span {
+    height: 30px;
+    line-height: 30px;
+}
+
+.panel-num {
+    float: left;    
+    border: 1px solid #b3b3b3;
+    padding: 1px 0;
+    overflow: hidden;
+}
+
+.panel-num span {
+    float: left;
+    width: 28px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    color: #000;
+}
+
+.panel-num .panel-minus {
+    width: 23px;
+    border-right: 1px solid #e4e3e5;
+    color: #8c8b8b;
+    cursor: pointer;
+}
+
+.panel-num .panel-add {
+    width: 23px;
+    border-left: 1px solid #e4e3e5;
+    color: #8c8b8b;
+    cursor:pointer;
+}
+
+/*库存*/
+.panel-inventory {
+    float: left;
+    height: 30px;
+    margin-left: 16px;
+    line-height: 30px;
+    color: #999;
+}
+
+/*眼镜度数范围*/
+.panel-main .panel-range {
+	margin: 0 0 15px 0;
+}
+
+.panel-range div {
+	font-size: 14px;
+}
+
+/*面板底部购物车以及商家优惠详情*/
+.panel-bottom {
+    margin: 0 0 0 65px;
+}
+
+.panel-bottom > div {
+	
+}
+
+.panel-bottom p {
+	display: inline-block;
+    width: 195px;
+    height: 40px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    background: #f39f25;
+    cursor: pointer;
+}
+
+.panel-bottom .shopCar-desable {
+	background: rgb(170, 170, 170);
+    cursor: not-allowed;
+}
+
+.panel-bottom .bottom-matt {
+    width: 128px;
+    height: 38px;
+    margin-right: 15px;
+    line-height: 38px;
+    border: 1px solid #b768a5;
+    color: #b768a5;
+    background: #fff;
+}
+
+.panel-bottom p i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 16px;
+    margin-right: 6px;
+    background: url("../images/pay_bg.png") no-repeat;
+}
+
+.panel-bottom li {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    line-height: 27px;
+    color: #666;
+    cursor: pointer;
+}
+
+.panel-bottom span span {
+    display: inline-block;
+    padding: 5px 0;
+    vertical-align: middle;
+}
+
+.panel-bottom li:hover div {
+    display: block;
+}
+
+.panel-bottom li div {
+    position: absolute;
+    top: 35px;
+    left: -55px;
+    display: none;
+    width: 230px;
+    padding: 10px 15px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 9px #ccc;
+    background: #ffffff;
+}
+
+.panel-bottom li div span {
+    position: absolute;
+    top: -7px;
+    left: 85px;
+    z-index: 2;
+    width: 15px;
+    height: 9px;
+    background: url("../images/dzicon.png") no-repeat -32px -170px;
+}
+
+.panel-bottom li i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 3px;
+    vertical-align: middle;
+    background:url("../images/sprit_biyao.png") no-repeat -288px -70px;
+}
+/*商品详情及评价*/
+/*商品详情及评价标签*/
+.section-view {
+    position: relative;
+    margin-top: 30px;
+}
+
+.section-view img {
+    max-width: 100%;
+}
+
+.section-view > ul {
+    border-bottom: 2px solid #e8e8e8;
+}
+
+.section-view > ul li {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.section-view > ul span {
+    display: inline-block;
+    width: 130px;
+    height: 17px;
+    margin: 10px 0;
+    line-height: 17px;
+    text-align: center;
+    color: #523669;
+
+}
+
+.section-view .view-title-detail span {
+    border-right: 1px solid #ccc;
+}
+
+.section-view i {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 37px;
+    display: none;
+    width: 130px;
+    height: 2px;
+    background: #523669;
+}
+
+.section-view .view-title-active i {
+	display: block;
+}
+
+/*商品详情及评价主体*/
+.view-main > div {
+    display: none;
+}
+
+.view-main .view-active {
+    display: block;
+}
+
+/*商品详情相关*/
+.view-details {
+    text-align: center;
+}
+
+/*商家后台传递的字符串样式*/
+.imgText-property {
+    width: 800px;
+    margin: 0 auto 20px;
+}
+
+.imgText-property dl {
+    line-height: 32px;
+    border-bottom: 2px dotted #cecece;
+    font-size: 16px;
+    color: #333;
+}
+
+.imgText-property dt {
+    display: inline-block;
+    width: 160px;
+    font-size: 16px;
+    color: #666;
+    vertical-align: top;
+}
+
+.imgText-property dd {
+    display: inline-block;
+    width: 630px;
+    font-size: 16px;
+    color: #333;
+}
+
+.imgText-solePoint {
+    width: 800px;
+    margin: 0 auto 20px;
+}
+
+.imgText-solePoint p {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.imgText-solePoint img {
+    width: 800px;
+    height: 320px;
+}
+
+.imgText-textDes {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.imgText-textDes span {
+    display: block;
+    height: 40px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    border: 2px solid #c9c9c9;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.imgText-textDes div {
+    margin-bottom: 40px;
+}
+
+.imgText-textDes p {
+	min-height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	color: #666;
+}
+
+.imgText-textDes p:first-child strong {
+	margin: 0;
+}
+
+.imgText-textDes strong {
+	display: block;
+	margin-top: 20px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #333;
+}
+
+.imgText-supService {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.imgText-supService hr {
+    height: 1px;
+    color: #c9c9c9;
+}
+
+.imgText-supService span {
+    position: relative;
+    top: -24px;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    background: #fff;
+}
+
+.imgText-supService div {
+    margin-bottom: 40px;
+}
+/*评价相关*/
+.view-evaluate .evaluate-title {
+    height: 50px;
+    margin-top: 40px;
+    line-height: 50px;
+    border: 1px solid #e8e8e8;
+    background: #f5f5f5;
+}
+
+.evaluate-satisfi,
+.evaluate-star,
+.evaluate-score,
+.evaluate-num{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.evaluate-satisfi {
+    margin: 0 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.evaluate-star {
+	position: relative;
+    width: 164px;
+    height: 23px;
+    margin: 0 15px;
+    background: url("../images/sprit_biyao.png") no-repeat -321px -190px;
+}
+
+.evaluate-star i {
+	position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    height: 23px;
+    background:url("../images/sprit_biyao.png") no-repeat -321px -190px;
+}
+
+.evaluate-score {
+    font-size: 16px;
+}
+
+.evaluate-score span {
+    font-size: 16px;
+    color: #f49f26;
+}
+
+.evaluate-num {
+    margin-left: 30px;
+    color: #999;
+}
+
+.view-evaluate .evaluate-content {
+    margin-top: 18px;
+}
+
+.evaluate-content li {
+	position: relative;
+    padding: 20px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.evaluate-content li img {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border: 1px #E2E2E2 solid;
+}
+
+.evaluate-content li div {
+    margin-left: 130px;
+}
+
+.evaluate-content li p {
+    line-height: 35px;
+    color: #666;
+}
+
+.evaluate-content li b {
+    position: relative;
+    display: inline-block;
+    height: 15px;
+    width: 110px;
+    vertical-align: middle;
+    background: url("../images/sprit_biyao.png") no-repeat -339px -268px;
+}
+
+.evaluate-content li i {
+	position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    height: 15px;
+    width: 0;
+    background: url("../images/sprit_biyao.png") no-repeat -339px -268px;
+}
+
+.evaluate-after {
+	padding: 10px;
+	line-height: 21px!important;
+}
+
+.evaluate-merchants,
+.evaluate-platform {
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #e8e8e8;
+	line-height: 21px!important;
+	background: #fffdf0;
+}
+
+.evaluate-after span {
+	color: #F27A02;
+}
+
+.evaluate-merchants span {
+	color: #F27A02;
+}
+
+.evaluate-platform span {
+	color: #724A87;
+}
+
+.evaluate-time {
+    color: #999;
+}
+
+.view-evaluate .evaluate-page {
+	margin: 20px 0 40px;
+	text-align: center;
+}
+
+.evaluate-page li {
+	display: inline-block;
+	height: 26px;
+    padding: 0 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    line-height: 26px;
+    color: #3A414C;
+    cursor: pointer;
+}
+
+.evaluate-page .e-active {
+	border: 1px solid #f60;
+    color: #f60;
+}
+
+/*眼镜遮罩*/
+.degreeLayer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 200;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.layer-gray {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 201;
+	width: 100%;
+	height: 100%;
+	background:#000;
+	filter: alpha(opacity=50);
+	-maz-opacity: 0.5; 
+	opacity: 0.5;
+}
+
+.layer-main {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 202;
+	width: 420px;
+	height: 572px;
+	margin-left: -210px;
+	margin-top: -286px;
+	background: #fff;
+}
+
+/*价格周期*/
+.degree-title {
+	height: 60px;
+	padding: 0 20px;
+	line-height: 60px;
+	font-size: 14px;
+	color: #333;
+	background: #f2f2f2;
+}
+
+.degree-title i {
+	display: inline-block;
+    height: 60px;
+    margin-right: 20px;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #ff3435;
+}
+
+.degree-title b {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+/*面包屑*/
+.degree-bread {
+	height: 40px;
+	margin: 0 20px;
+	line-height: 40px;
+	border-bottom: 1px dotted #ccc;
+}
+
+.degree-bread i {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin: 0px 10px 3px 0;
+	vertical-align: middle;
+	background: url(../images/glassnumtop.png) no-repeat -8px -43px;
+}
+
+.degree-bread span {
+	font-size: 16px;
+}
+
+.degree-bread b {
+	display: inline-block;
+	width: 8px;
+	height: 14px;
+	margin: 0px 10px 3px;
+	vertical-align: middle;
+	background: url(../images/glassnumtop.png) no-repeat -85px -15px;
+}
+
+.degreeStepOne .stepOne-num {
+	background: url(../images/glassnumtop.png) no-repeat -8px -12px;
+}
+
+.degreeStepOne .stepOne-bread {
+	color: #724a88;
+}
+
+.degreeStepTwo .stepTwo-bread {
+	color: #724a88;
+}
+
+.degreeStepTwo .stepOne-num {
+	background: url(../images/glassnumtop.png) no-repeat -43px -43px;;
+}
+
+.degreeStepTwo .stepTwo-num {
+	background: url(../images/glassnumtop.png) no-repeat -43px -12px;
+}
+
+.degreeMatt .degree-bread span,
+.degreeMatt .degree-bread b,
+.degreeMatt .degree-bread i {
+	display: none;
+}
+
+.degreeMatt .degree-bread .stepTwo-bread {
+	display: block;
+	color: #724a88;
+}
+
+/*主体部分*/
+.degree-main {
+	display: none;
+	padding: 0 20px;
+}
+
+.degree-main  > ul > li {
+	margin-top: 20px;
+}
+
+.degree-main  > ul > li > p {
+	font-size: 16px;
+	color: #724a88;
+}
+
+.degree-main  > ul > li > div {
+	position: relative;
+	display: inline-block;
+	width: 180px;
+	margin-top: 15px;
+}
+
+.degree-main  > ul > li .stepOne-PD {
+	width: 378px;
+}
+
+.degree-main .J_select .sel_span {
+    padding: 0 21px 0 5px;
+    color: #333;
+    background: url(../images/h25_select.png) no-repeat right center;
+}
+
+.degree-main .J_select .select-desable {
+	background-color: #ccc;
+	cursor: default;
+}
+
+.degree-main .select-valid .sel_span {
+	border: 1px solid red;
+}
+
+.degree-main .sel_div {
+	width: 100%;
+}
+
+.degree-main .degree-matt {
+	display: none;
+}
+
+.degreeMatt .degree-matt {
+	display: inline-block;
+    font-size: 15px;
+	color: #333;
+    font-weight: bold;
+}
+
+.degreeStepOne .stepOne-main,
+.degreeStepTwo .stepTwo-main {
+	display: block;
+}
+
+/*步骤一*/
+.stepOne-rightSPH,
+.stepOne-rightCYL,
+.stepOne-rightAXIS {
+	margin-left: 15px;
+}
+
+/*步骤二*/
+.degreeStepTwo .degree-main {
+	position: relative;
+	height: 390px;
+	overflow: hidden;
+}
+
+.degreeStepTwo .degree-main ul {
+	position: relative;
+	overflow: hidden;
+}
+
+.degreeStepTwo .degree-main ul div {
+	width: 100%;
+}
+
+.degree-main .stepTwo-scrollCon {
+	position: absolute;
+	right: 2px;
+	top: 0;
+	width: 6px;
+	height: 100%;
+	background: #D5CDDA;
+	border-radius: 3px;
+}
+
+.degree-main .stepTwo-scrollCon span{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 20px;
+	background: #A199A5;
+	border-radius: 3px;
+}
+
+/*步骤二度数*/
+.stepTwo-degree table {
+	width: 100%;
+    border-collapse: collapse;
+}
+
+.stepTwo-degree td {
+    height: 25px;
+	border: 1px solid #e0dae4;
+    line-height: 25px;
+    text-align: center;
+}
+
+.table-CYL,
+.table-AXIS,
+.degreeMatt .stepTwo-degree table {
+	display: none;
+}
+
+/*步骤二系列*/
+.stepTwo-series li {
+	position: relative;
+    display: inline-block;
+    height: 33px;
+    min-width: 42px;
+    padding: 0 30px;
+    margin: 0 10px 5px 0;
+    border: 1px solid #acacac;
+    line-height: 33px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.stepTwo-series i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+	width: 21px;
+    height: 21px;
+    background: url(../images/sprit_biyao.png) -147px -36px no-repeat;
+}
+
+.stepTwo-series .stepTwo-series-active{
+	border: 1px solid #b768a5;
+}
+
+.stepTwo-series-active i {
+	display: block;
+}
+
+/*步骤二明细*/
+.stepTwo-detail li {
+	position: relative;
+	display: none;
+	width: 358px;
+	min-height: 48px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #acacac;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+.stepTwo-detail a {
+	position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+	width: 21px;
+    height: 21px;
+    background: url(../images/sprit_biyao.png) -147px -36px no-repeat;
+}
+
+.stepTwo-detail .lowModel-specs-active{
+	border: 1px solid #b768a5;
+}
+
+.lowModel-specs-active i {
+	display: block;
+}
+
+/*底部加入购物车*/
+.degree-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 203;
+	width: 380px;
+	height: 74px;
+	margin: 0 20px;
+	line-height: 74px;
+	border-top: 1px dotted #ccc;
+}
+
+.degree-bottom a {
+	display: none;
+	color: #b768a5;
+	cursor: pointer;
+}
+
+.degree-bottom b {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	vertical-align: middle;
+	margin: 0 10px 3px 0;
+	background: url(../images/how_bg.png) no-repeat;
+}
+
+.degree-bottom i {
+	float: right;
+	display: none;
+	width: 150px;
+	height: 40px;
+	margin-top: 17px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	background: #b76aa5;
+	cursor: pointer;
+}
+
+.degree-bottom .degree-last {
+	float: left;
+	width: 98px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #acacac;
+    background: #fff;
+    color: #666666;
+}
+
+.degree-bottom .shopCar-desable {
+	background: #ccc;
+	cursor: not-allowed;
+}
+
+.degreeStepOne .degree-bottom a,
+.degreeStepOne .degree-bottom .degree-next,
+.degreeStepTwo .degree-bottom .degree-shopCar,
+.degreeStepTwo .degree-bottom .degree-last {
+	display: inline-block;
+}
+
+.degreeMatt .degree-bottom .degree-last {
+	display: none;
+}
+
+/*关闭按钮*/
+.layer-main > i {
+	position: absolute;
+	right: 22px;
+	top: 22px;
+    display: block;
+	z-index: 204;
+    width: 16px;
+	height: 16px;
+    background: url(../images/cls_btn.png) no-repeat;
+    cursor: pointer;
+}
+
+/*双11筷子签字*/
+p.double11 input {
+	width: 230px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc; 
+}
