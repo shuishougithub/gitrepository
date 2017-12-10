@@ -1,6 +1,7 @@
 /**
  * 
  */
+ //文件已经被修改,
 package com.bjpowernode.esupermarket.manager.service.impl;
 
 import static org.junit.Assert.*;
